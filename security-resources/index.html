@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>Creating Security Resources - Cloud Deployment Framework</title>
+    <meta name="generator" content="Hugo 0.18.1" />
+
+    
+    <meta name="description" content="Cloud Deployment Framework">
+    
+    <link rel="canonical" href="https://example.org/security-resources/">
+    
+    <meta name="author" content="Justin Menga">
+    
+
+    <meta property="og:url" content="https://example.org/security-resources/">
+    <meta property="og:title" content="Cloud Deployment Framework">
+    <meta property="og:image" content="https://example.org/images/logo.png">
+    <meta name="apple-mobile-web-app-title" content="Cloud Deployment Framework">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://example.org/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="https://example.org/images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('https://example.org/fonts/icon.eot');
+        src: url('https://example.org/fonts/icon.eot')
+               format('embedded-opentype'),
+             url('https://example.org/fonts/icon.woff')
+               format('woff'),
+             url('https://example.org/fonts/icon.ttf')
+               format('truetype'),
+             url('https://example.org/fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="https://example.org/stylesheets/application.css">
+    <link rel="stylesheet" href="https://example.org/stylesheets/temporary.css">
+    <link rel="stylesheet" href="https://example.org/stylesheets/palettes.css">
+    <link rel="stylesheet" href="https://example.org/stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu&#43;Mono">
+    <style>
+      body, input {
+        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Ubuntu Mono', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <script src="https://example.org/javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-red palette-accent-teal">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="title">
+        Creating Security Resources
+      </div>
+    </div>
+
+    
+    <div class="button button-twitter" role="button" aria-label="Twitter">
+       <a href="https://twitter.com/jmenga" title="@jmenga on Twitter" target="_blank" class="toggle-button icon icon-twitter"></a>
+    </div>
+    
+
+    
+    <div class="button button-github" role="button" aria-label="GitHub">
+      <a href="https://github.com/mixja" title="@mixja on GitHub" target="_blank" class="toggle-button icon icon-github"></a>
+    </div>
+    
+    
+        
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="https://example.org/" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="https://example.org/images/logo.png">
+        </div>
+      
+      <div class="name">
+        <strong>Cloud Deployment Framework <span class="version">v0.1</span></strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Introduction" href="https://example.org/">
+	
+	Introduction
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Tutorial" href="https://example.org/tutorial/">
+	
+	Tutorial
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a class="current" title="Security Resources" href="https://example.org/security-resources/">
+	
+	Security Resources
+</a>
+
+
+<ul id="scrollspy">
+</ul>
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="CloudFormation Resources" href="https://example.org/cloudformation-resources/">
+	
+	CloudFormation Resources
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="License" href="https://example.org/license/">
+	
+	License
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+        <hr>
+        <span class="section">The author</span>
+        
+        <ul>
+          
+          <li>
+            <a href="https://twitter.com/jmenga" target="_blank" title="@jmenga on Twitter">
+              @jmenga on Twitter
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="https://github.com/mixja" target="_blank" title="@mixja on GitHub">
+              @mixja on GitHub
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="mailto:justin.menga@gmail.com" title="Email of justin.menga@gmail.com">
+              Contact via email
+            </a>
+          </li>
+          
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1>Creating Security Resources </h1>
+
+			
+
+<h2 id="introduction">Introduction</h2>
+
+<p>The <code>aws-cloudformation</code> role included in the framework contains a security resources template that is designed to define the following security resources:</p>
+
+<ul>
+<li>IAM roles</li>
+<li>IAM groups</li>
+<li>ACM certificates</li>
+</ul>
+
+<p>By default, without any custom configuration, the security template creates the following resources:</p>
+
+<ul>
+<li>An <strong>admin</strong> IAM role that has the AWS <strong>AdministratorAccess</strong> managed policy attached and trusts your AWS account and an optional list of other AWS accounts to assume the role</li>
+<li>An <strong>Administrators</strong> IAM group that has an IAM policy attached that permits members of this group the ability to assume the <strong>admin</strong> role.</li>
+<li>A <strong>Users</strong> IAM group that has an IAM policy attached that enforces a requirement for multi-factor authentication (MFA) for all AWS operations except for a minimal set of IAM operations that allow a user to register/resync his/her MFA device and change his/her password.</li>
+</ul>
+
+<h2 id="creating-a-temporary-user">Creating a temporary user</h2>
+
+<p>The security resources stack is the first stack you will create in a given AWS account, and requires a temporary administrative user to be created with an API access key configured to run the security resources playbook.</p>
+
+<blockquote>
+<p>These instructions assume you are configuring a new account and have logged in to the account using root credentials to perform initial setup.</p>
+</blockquote>
+
+<ol>
+<li><p>In the IAM dashboard, select  <strong>Users</strong> on the left panel and click <strong>Add User</strong>.</p>
+
+<p><img src="https://example.org/images/iam-dashboard.png" alt="IAM Dashboard" /></p></li>
+
+<li><p>Specify an appropriate user name, select the option to enable <strong>Programmatic access</strong>, and click <strong>Next: Permissions</strong>.</p>
+
+<p><img src="https://example.org/images/iam-add-user.png" alt="Add User" /></p></li>
+
+<li><p>Select the <strong>Attach existing policies directly</strong> option and type <strong>AdministratorAccess</strong> in the <strong>Filter</strong> input.  Ensure the <strong>AdministratorAccess</strong> policy is selected and then click <strong>Next: Review</strong>.</p>
+
+<p><img src="https://example.org/images/iam-set-permissions.png" alt="Set Permissions" /></p></li>
+
+<li><p>Click on the <strong>Create User</strong> button.</p>
+
+<p><img src="https://example.org/images/iam-create-user.png" alt="Create User" /></p></li>
+
+<li><p>Click on the <strong>Show</strong> link to display the secret access key for the newly created user.</p>
+
+<p><img src="https://example.org/images/iam-access-key.png" alt="Access Key" /></p></li>
+
+<li><p>Copy the <strong>Access key ID</strong> and <strong>Secret access key</strong> values which you will need to configure the environment.  Once you have copied these values, click on the <strong>Close</strong> button.</p>
+
+<p><img src="https://example.org/images/iam-show-access-key.png" alt="Show Access Key" /></p></li>
+
+<li><p>Open a new shell prompt and export the access key ID and secret access key values as demonstrated below.</p>
+
+<pre><code class="language-bash">$ export AWS_ACCESS_KEY_ID=AKIAIRJGYMTD252YWCTQ
+$ export AWS_SECRET_ACCESS_KEY=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
+$ export AWS_DEFAULT_REGION=us-west-2
+</code></pre></li>
+</ol>
+
+<h2 id="installing-the-playbook-locally">Installing the playbook locally</h2>
+
+<p>The security resources playbook is located at <a href="https://github.com/casecommons/caintake-security.git">https://github.com/casecommons/caintake-security.git</a>.  In this section we will add a new environment called <strong>demo</strong> to the playbook, which will be used to create security resources in our new account.</p>
+
+<p>First clone the repository locally and change to the <code>caintake-security</code> folder:</p>
+
+<pre><code class="language-bash">$ git clone git@github.com:casecommons/caintake-security.git
+  Cloning into 'caintake-security'...
+  remote: Counting objects: 32, done.
+  remote: Total 32 (delta 0), reused 0 (delta 0), pack-reused 32
+  Receiving objects: 100% (32/32), 4.78 KiB | 0 bytes/s, done.
+  Resolving deltas: 100% (7/7), done.
+$ cd caintake-security
+$ tree
+.
+├── README.md
+├── ansible.cfg
+├── group_vars
+│   ├── all
+│   │   └── vars.yml
+│   └── non-prod
+│       └── vars.yml
+├── inventory
+├── roles
+│   └── requirements.yml
+└── site.yml
+</code></pre>
+
+<p>Review the <code>roles/requirements.yml</code> file, which specifies the location and version of Ansible roles that the playbook relies on:</p>
+
+<pre><code class="language-python">- src: git@github.com:Casecommons/aws-cloudformation.git
+  scm: git
+  version: 0.7.0
+  name: aws-cloudformation
+- src: git@github.com:Casecommons/aws-sts.git
+  scm: git
+  version: 0.1.2
+  name: aws-sts
+</code></pre>
+
+<p>Install the roles using the <code>ansible-galaxy</code> command as demonstrated below:</p>
+
+<pre><code class="language-bash">$ ansible-galaxy install -r roles/requirements.yml --force
+- extracting aws-cloudformation to /Users/jmenga/Source/casecommons/caintake-security/roles/aws-cloudformation
+- aws-cloudformation was installed successfully
+- extracting aws-sts to /Users/jmenga/Source/casecommons/caintake-security/roles/aws-sts
+- aws-sts was installed successfully
+</code></pre>
+
+<p>Notice that this installs the roles locally into the <code>roles</code> folder.</p>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You only need to run the <code>ansible-galaxy install</code> command as demonstrated above in the following scenarios:</p>
+
+<ul>
+<li>Cloning the repository for the first time</li>
+<li>Updating the locally installed roles to a newer version</li>
+<li>Resetting the locally installed roles to their original state</li>
+</ul>
+
+<p>Using the <code>--force</code> flag ensures the role will be overwritten regardless of whether or not the role is currently present locally.</p>
+</div>
+
+<p>Review the <code>group_vars/all/vars.yml</code> file, which contains global settings for the security resources playbook:</p>
+
+<pre><code class="language-python"># Stack Settings
+cf_stack_name: security-resources
+cf_stack_template: &quot;templates/security.yml.j2&quot;
+cf_stack_tags:
+  org:business:owner: CA Intake
+  org:business:product: Security
+  org:business:severity: Severity1
+  org:tech:environment: &quot;{{ env }}&quot;
+  org:tech:contact: pema@casecommons.org
+  
+# CloudFormation settings
+# This sets a policy that disables updates to existing resources
+# This requires you to explicitly set the cf_disable_stack_policy flag to true when running the playbook
+cf_stack_policy:
+  Statement:
+  - Effect: &quot;Deny&quot;
+    Action: &quot;Update:*&quot;
+    Principal: &quot;*&quot;
+    Resource: &quot;*&quot;
+</code></pre>
+
+<p>Notice that the <code>cf_stack_template</code> setting references <code>templates/security.yml.j2</code>, which is a relative reference to a template included within the <code>aws-cloudformation</code> role.</p>
+
+<p>Finally review the <code>site.yml</code> file, which contains the main playbook:</p>
+
+<pre><code class="language-python">- name: Assume Role
+  hosts: &quot;{{ env }}&quot;
+  gather_facts: no
+  roles:
+    - aws-sts
+
+- name: Stack Deployment
+  hosts: &quot;{{ env }}&quot;
+  environment: &quot;{{ sts_creds }}&quot;
+  roles:
+    - aws-cloudformation
+</code></pre>
+
+<p>Notice the playbook is very simple with two plays defined:</p>
+
+<ul>
+<li>Assume Role - this calls the <code>aws-sts</code> role and assumes the role defined by the <code>sts_role_arn</code> setting for a given environment.</li>
+<li>Stack Deployment - this calls the <code>aws-cloudformation</code> role and creates a CloudFormation stack for a given environment.  Notice that we inject <code>sts_creds</code> into the environment, which contains the temporary session credentials obtained via the previous Assume Role play.</li>
+</ul>
+
+<p>In both plays, notice that the <code>hosts</code> variable references the <code>env</code> variable, which we must always supply at runtime:</p>
+
+<pre><code>$ ansible-playbook site.yml -e env=&lt;environment-name&gt;
+</code></pre>
+
+<p>An interesting aspect of the framework is that you generally don&rsquo;t need to modify the primary <code>site.yml</code> playbook, unless you want to perform some custom pre-deployment or post-deployment actions.</p>
+
+<h2 id="defining-a-new-environment">Defining a new environment</h2>
+
+<p>In this section we will add a new environment called <strong>demo</strong> to the playbook, which will be used to create security resources in our new account.</p>
+
+<p>First add <strong>demo</strong> as a new environment in the <code>inventory</code> file:</p>
+
+<pre><code class="language-toml">[non-prod]
+non-prod ansible_connection=local
+
+[demo]
+demo ansible_connection=local
+</code></pre>
+
+<p>Next create a file called <code>group_vars/demo/vars.yml</code>, which will hold all environment specific configuration for the <strong>demo</strong> environment:</p>
+
+<pre><code class="language-bash">$ mkdir -p group_vars/demo
+$ touch group_vars/demo/vars.yml
+</code></pre>
+
+<p>Finally add the following settings to <code>group_vars/demo/vars.yml</code>, replacing <code>625916301437</code> with the account ID of the <strong>demo</strong> account:</p>
+
+<pre><code class="language-python"># STS role to assume
+sts_role_arn: &quot;arn:aws:iam::625916301437:role/admin&quot;
+
+# List of accounts to trust to assume the admin role
+# This example adds the caintakeusers account as a trusted entity
+config_iam_admin_accounts:
+  - 391236350805
+</code></pre>
+
+<p>The <code>sts_role_arn</code> setting defines the Amazon Resource Name (ARN) of the IAM role the <code>aws-sts</code> Ansible role (take care not to confuse IAM and Ansible roles) will attempt to assume.  This is a very important setting, as it establishes the target account that the playbook will create a CloudFormation stack and associated resources in.</p>
+
+<p>The <code>config_iam_admin_accounts</code> setting is specific to the security resources template, and allows you to configure other AWS accounts as trusted entities that are allowed to assume the <strong>admin</strong> role that is automatically created as part of the security resources stack.</p>
+
+<p>This supports a common security pattern where all AWS users are defined in a central <strong>&ldquo;users&rdquo;</strong> account and then assume roles into <strong>&ldquo;resource&rdquo;</strong> accounts.</p>
+
+<p>In this example, our new account is considered a <strong>&ldquo;resource&rdquo;</strong> account and we are configuring the admin role to trust users from the account ID <strong>391236350805</strong>.</p>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Adding a remote account as a trusted entity does not automatically allow all users from the remote account to assume the role.</p>
+
+<p>Users in the remote account must be granted permissions to assume the role - hence we are delegating control of which users can assume the admin role to the trusted account.</p>
+</div>
+
+<h2 id="running-the-playbook">Running the playbook</h2>
+
+<p>The security template in the <code>aws-cloudformation</code> role will create the following resources by default:</p>
+
+<ul>
+<li>An IAM role named <strong>admin</strong></li>
+<li>An IAM group named <strong>Administrators</strong> that grants members the ability to assume the <strong>admin</strong> role</li>
+<li>An IAM group named <strong>Users</strong> that requires users to authenticate using multi-factor authentication (MFA)</li>
+</ul>
+
+<p>Let&rsquo;s now run the playbook to create these resources.</p>
+
+<blockquote>
+<p>These instructions assume you have configured your local environment with the AWS access key and AWS secret access key created earlier in  <a href="https://example.org/security-resources/#creating-a-temporary-user">Creating a temporary user</a></p>
+</blockquote>
+
+<p>First run the Ansible playbook targeting the <code>demo</code> environment as demonstrated below:</p>
+
+<pre><code class="language-bash">$ ansible-playbook site.yml -e env=demo
+
+PLAY [Assume Role] *************************************************************
+
+TASK [aws-sts : set_fact] ******************************************************
+ok: [demo]
+
+TASK [aws-sts : checking if sts functions are sts_disabled] ********************
+skipping: [demo]
+
+TASK [aws-sts : setting empty sts_session_output result] ***********************
+skipping: [demo]
+
+TASK [aws-sts : setting sts_creds if legacy AWS credentials are present (e.g. for Ansible Tower)] ***
+skipping: [demo]
+
+TASK [aws-sts : assume sts role] ***********************************************
+fatal: [demo]: FAILED! =&gt; {&quot;changed&quot;: false, &quot;cmd&quot;: &quot;aws sts assume-role --role-arn=\&quot;arn:aws:iam::625916301437:role/admin\&quot; 
+--role-session-name=\&quot;adminSession\&quot;&quot;, &quot;delta&quot;: &quot;0:00:02.143031&quot;, &quot;end&quot;: &quot;2017-02-19 14:42:24.227270&quot;, &quot;failed&quot;: true, 
+&quot;rc&quot;: 255, &quot;start&quot;: &quot;2017-02-19 14:42:22.084239&quot;, &quot;stderr&quot;: &quot;\nAn error occurred (AccessDenied) when calling the AssumeRole 
+operation: Not authorized to perform sts:AssumeRole&quot;, &quot;stdout&quot;: &quot;&quot;, &quot;stdout_lines&quot;: [], &quot;warnings&quot;: []}
+
+PLAY RECAP *********************************************************************
+demo                       : ok=1    changed=0    unreachable=0    failed=1 
+</code></pre>
+
+<p>Notice that the operation fails, and this is because we have a chicken-in-egg scenario where our the <code>aws-sts</code> Ansible role in our playbook is attempting to assume the IAM role defined by the <code>sts_role_arn</code> setting in our <code>groups_vars/demo/vars.yml</code> file:</p>
+
+<pre><code class="language-python"># STS role to assume
+sts_role_arn: &quot;arn:aws:iam::625916301437:role/admin&quot;
+...
+...
+</code></pre>
+
+<p>This <strong>admin</strong> role does not exist yet, as it is the job of the security playbook to create the role, creating a chicken-in-egg scenario.</p>
+
+<p>To overcome this we can set a flag <code>sts_disable</code> to <code>true</code>, which disables the <code>aws-sts</code> role:</p>
+
+<pre><code class="language-bash">$ ansible-playbook site.yml -e env=demo -e sts_disable=true
+
+PLAY [Assume Role] *************************************************************
+
+TASK [aws-sts : set_fact] ******************************************************
+ok: [demo]
+
+TASK [aws-sts : checking if sts functions are sts_disabled] ********************
+ok: [demo] =&gt; {
+    &quot;msg&quot;: &quot;Skipping STS functions as sts_disabled is defined&quot;
+}
+
+...
+...
+
+TASK [aws-cloudformation : configure application stack] ************************
+changed: [demo]
+
+TASK [aws-cloudformation : get stack facts] ************************************
+ok: [demo]
+
+TASK [aws-cloudformation : set stack facts] ************************************
+ok: [demo]
+
+TASK [aws-cloudformation : debug] **********************************************
+skipping: [demo]
+
+TASK [aws-cloudformation : S3 Template URL] ************************************
+skipping: [demo]
+
+TASK [aws-cloudformation : enable current stack policy] ************************
+skipping: [demo]
+
+TASK [aws-cloudformation : fail] ***********************************************
+skipping: [demo]
+
+TASK [aws-cloudformation : delete application stack] ***************************
+skipping: [demo]
+
+PLAY RECAP *********************************************************************
+demo                       : ok=19   changed=1    unreachable=0    failed=0
+</code></pre>
+
+<p>This time the playbook succeeds, pausing on the <code>configure application stack</code> task for a couple of minutes whilst the CloudFormation stack is created (notice this task completes with a <code>changed</code> status), and then completing successfully once the stack is created.</p>
+
+<p>If you navigate to the CloudFormation dashboard, notice that a new stack called <strong>security-resources</strong> has been created:
+<img src="https://example.org/images/security-resources-stack.png" alt="Security Resources Stack" /></p>
+
+<p>In the IAM dashboard we can verify that our <strong>admin</strong> role has been created and if we select the role and open the <strong>Trust Relationships</strong> tab, we can see that both the local account (account ID <strong>625916301437</strong>) and remote <strong>&ldquo;users&rdquo;</strong> account (account ID <strong>391236350805</strong>) are trusted entities that can assume the <strong>admin</strong> role:
+<img src="https://example.org/images/iam-admin-role.png" alt="IAM Admin Role" /></p>
+
+<p>Because the <strong>admin</strong> role has now been created, you should be able to re-run the playbook without the <code>sts_disable</code> flag:</p>
+
+<pre><code class="language-bash">$ ansible-playbook site.yml -e env=demo
+
+PLAY [Assume Role] *************************************************************
+
+TASK [aws-sts : set_fact] ******************************************************
+ok: [demo]
+...
+...
+
+TASK [aws-cloudformation : configure application stack] ************************
+ok: [demo]
+
+TASK [aws-cloudformation : get stack facts] ************************************
+ok: [demo]
+
+TASK [aws-cloudformation : set stack facts] ************************************
+ok: [demo]
+
+TASK [aws-cloudformation : debug] **********************************************
+skipping: [demo]
+
+TASK [aws-cloudformation : S3 Template URL] ************************************
+skipping: [demo]
+
+TASK [aws-cloudformation : enable current stack policy] ************************
+skipping: [demo]
+
+TASK [aws-cloudformation : fail] ***********************************************
+skipping: [demo]
+
+TASK [aws-cloudformation : delete application stack] ***************************
+skipping: [demo]
+
+PLAY RECAP *********************************************************************
+demo                       : ok=20   changed=0    unreachable=0    failed=0
+</code></pre>
+
+<p>This time the playbook can successfully assume the <strong>admin</strong> role (because our temporary user has administrative credentials and the role trusts the local AWS account), and notice that the <strong>configure application stack</strong> completes with no change, as the CloudFormation stack already exists and no configuration changes have been made.</p>
+
+<p>Back in the IAM console, you should also be able to see that an <strong>Administrators</strong> group and <strong>Users</strong> group have been created:</p>
+
+<p><img src="https://example.org/images/iam-groups.png" alt="IAM Groups" /></p>
+
+<p>At this point, you can remove the temporary administrative user <a href="https://example.org/security-resources/#creating-a-temporary-user">we created earlier</a> by selecting the user in the IAM users section, clicking <strong>Delete users</strong> and confirming the delete operation:
+<img src="https://example.org/images/iam-delete-user.png" alt="Delete User" />
+<img src="https://example.org/images/iam-confirm-delete-user.png" alt="Confirm Delete User" /></p>
+
+<p>You should also now clear the previous temporary user credentials from your local shell:</p>
+
+<pre><code class="language-bash">$ unset AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_DEFAULT_REGION
+</code></pre>
+
+<h2 id="configuring-the-users-account">Configuring the users account</h2>
+
+<p>In the previous section we added a <strong>&ldquo;users&rdquo;</strong> account as a trusted entity that is allowed to assume the <strong>admin</strong> role.</p>
+
+<p>Before users in the <strong>&ldquo;users&rdquo;</strong> account can assume the role, users within that account must be explicitly granted permission to assume the <strong>admin</strong> role.</p>
+
+<p>First login to the <strong>&ldquo;users&rdquo;</strong> account and navigate to the IAM dashboard.  In this example, we are logging into the <strong>caintakeusers</strong> account, which is the account we configured as a trusted entity for our new account&rsquo;s IAM <strong>admin</strong> role:</p>
+
+<p><img src="https://example.org/images/login-users.png" alt="Logging in to the Users Account" /></p>
+
+<p>Navigate to the IAM dashboard Groups section and add a new group called DemoAdmins:</p>
+
+<p><img src="https://example.org/images/iam-create-group.png" alt="Create Group" /></p>
+
+<p><img src="https://example.org/images/iam-set-group-name.png" alt="Set Group Name" /></p>
+
+<p>When prompted to attach a policy, click on <strong>Next Step</strong> to skip this section and then confirm creation of the group:</p>
+
+<p><img src="https://example.org/images/iam-skip-group-policy.png" alt="Skip Group Policy" /></p>
+
+<p><img src="https://example.org/images/iam-create-group-confirm.png" alt="Confirm Group" /></p>
+
+<p>Select the <strong>Permissions</strong> tab of the newly created group, expand <strong>Inline Policies</strong> and create a new inline policy by clicking the <strong>click here</strong> link:</p>
+
+<p><img src="https://example.org/images/iam-group-inline-policy.png" alt="Confirm Group" /></p>
+
+<p>Choose the <strong>Custom Policy</strong> option and click <strong>Select</strong>:</p>
+
+<p><img src="https://example.org/images/iam-group-custom-policy.png" alt="Confirm Group" /></p>
+
+<p>Copy the following policy document snippet:</p>
+
+<pre><code class="language-json">{
+    &quot;Version&quot;: &quot;2012-10-17&quot;,
+    &quot;Statement&quot;: [
+        {
+            &quot;Sid&quot;: &quot;Stmt1480629742000&quot;,
+            &quot;Effect&quot;: &quot;Allow&quot;,
+            &quot;Action&quot;: [
+                &quot;sts:AssumeRole&quot;
+            ],
+            &quot;Resource&quot;: [
+                &quot;arn:aws:iam::625916301437:role/admin&quot;
+            ]
+        }
+    ]
+}
+</code></pre>
+
+<p>Name the policy <strong>AssumeDemoAdminRole</strong>, paste the policy document snippet into the <strong>Policy Document</strong> window and then validate and apply the policy:</p>
+
+<p><img src="https://example.org/images/iam-policy-document.png" alt="Confirm Group" /></p>
+
+<p><img src="https://example.org/images/iam-group-policy-attached.png" alt="Confirm Group" /></p>
+
+<p>Finally we need to attach users go the newly created group:</p>
+
+<p><img src="https://example.org/images/iam-add-users-group.png" alt="Confirm Group" /></p>
+
+<p><img src="https://example.org/images/iam-select-users.png" alt="Confirm Group" /></p>
+
+<p><img src="https://example.org/images/iam-users-added.png" alt="Confirm Group" /></p>
+
+<p>The instructions above demonstrate how to manually configure the <strong>&ldquo;users&rdquo;</strong> account, however ideally you would configure these settings in a security playbook targeting the <strong>users</strong> account environment, run the playbook and then add users to the group via the AWS console:</p>
+
+<pre><code class="language-python"># Snippet from group_vars/&lt;users-environment&gt;/vars.yml
+...
+...
+config_iam_groups:
+  DemoAdmins:
+    Policies:
+      - PolicyName: AssumeDemoAdminRole
+        PolicyDocument:
+          Version: &quot;2012-10-17&quot;
+          Statement:
+            - Effect: &quot;Allow&quot;
+              Action:
+              - &quot;sts:AssumeRole&quot;
+              Resource: &quot;arn:aws:iam::625916301437:role/admin&quot;
+...
+...
+</code></pre>
+
+<h2 id="verifying-role-assumption">Verifying role assumption</h2>
+
+<p>To wrap up we can now verify that the user account(s) we just added to the <strong>DemoAdmins</strong> group in our central &ldquo;users&rdquo; account can assume the demo account <strong>admin</strong> role.</p>
+
+<p>The following snippet creates a profile that will assume this role in the local <code>~/.aws/config</code> file:</p>
+
+<pre><code class="language-toml">...
+[profile caintake-demo-admin]
+source_profile=caintake-users
+role_arn=arn:aws:iam::625916301437:role/admin
+mfa_serial=arn:aws:iam::391236350805:mfa/JustinMenga
+region=us-west-2
+...
+</code></pre>
+
+<p>With this profile in place, you can now configure the <code>AWS_PROFILE</code> environment variable and verify role assumption.  As before, you are able to assume the role and the playbook completes successfully with no change, as there has been no change to the security playbook configuration settings:</p>
+
+<pre><code class="language-bash">$ export AWS_PROFILE=caintake-demo-admin
+$ ansible-playbook site.yml -e env=demo
+
+PLAY [Assume Role] *************************************************************
+
+TASK [aws-sts : set_fact] ******************************************************
+ok: [demo]
+...
+...
+
+TASK [aws-cloudformation : configure application stack] ************************
+ok: [demo]
+
+TASK [aws-cloudformation : get stack facts] ************************************
+ok: [demo]
+
+TASK [aws-cloudformation : set stack facts] ************************************
+ok: [demo]
+
+TASK [aws-cloudformation : debug] **********************************************
+skipping: [demo]
+
+TASK [aws-cloudformation : S3 Template URL] ************************************
+skipping: [demo]
+
+TASK [aws-cloudformation : enable current stack policy] ************************
+skipping: [demo]
+
+TASK [aws-cloudformation : fail] ***********************************************
+skipping: [demo]
+
+TASK [aws-cloudformation : delete application stack] ***************************
+skipping: [demo]
+
+PLAY RECAP *********************************************************************
+demo                       : ok=20   changed=0    unreachable=0    failed=0
+</code></pre>
+
+
+			<aside class="copyright" role="note">
+				
+				&copy; 2017 Released under the MIT license &ndash;
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				
+
+<nav class="pagination" aria-label="Footer">
+  <div class="previous">
+  
+      <a href="https://example.org/cloudformation-resources/" title="CloudFormation Resources">
+        <span class="direction">
+          Previous
+        </span>
+        <div class="page">
+          <div class="button button-previous" role="button" aria-label="Previous">
+            <i class="icon icon-back"></i>
+          </div>
+          <div class="stretch">
+            <div class="title">
+              CloudFormation Resources
+            </div>
+          </div>
+        </div>
+      </a>
+  
+  </div>
+
+  <div class="next">
+  
+      <a href="https://example.org/tutorial/" title="Tutorial">
+        <span class="direction">
+          Next
+        </span>
+        <div class="page">
+          <div class="stretch">
+            <div class="title">
+              Tutorial
+            </div>
+          </div>
+          <div class="button button-next" role="button" aria-label="Next">
+            <i class="icon icon-forward"></i>
+          </div>
+        </div>
+      </a>
+  
+  </div>
+</nav>
+
+
+
+
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="https://example.org/javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "#";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

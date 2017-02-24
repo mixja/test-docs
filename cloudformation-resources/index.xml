@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cloudformation-resources on Cloud Deployment Framework</title>
+    <link>https://example.org/cloudformation-resources/index.xml</link>
+    <description>Recent content in Cloudformation-resources on Cloud Deployment Framework</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Released under the MIT license</copyright>
+    <lastBuildDate>Mon, 20 Feb 2017 06:39:45 +1300</lastBuildDate>
+    <atom:link href="https://example.org/cloudformation-resources/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>CloudFormation Resources</title>
+      <link>https://example.org/cloudformation-resources/</link>
+      <pubDate>Mon, 20 Feb 2017 06:39:45 +1300</pubDate>
+      
+      <guid>https://example.org/cloudformation-resources/</guid>
+      <description>
+
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;The &lt;code&gt;aws-cloudformation&lt;/code&gt; role included in the framework contains a CloudFormation resources template that is designed to define the following AWS resources:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;S3 bucket for CloudFormation templates&lt;/li&gt;
+&lt;li&gt;S3 bucket for Lambda functions used to support CloudFormation custom resources&lt;/li&gt;
+&lt;li&gt;Key Management Service (KMS) Key used for secrets management in CloudFormation stacks&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;By default, without any custom configuration, the CloudFormation resources template will create each of the above resources.&lt;/p&gt;
+
+&lt;p&gt;The template currently includes some optional configuration parameters as described below:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;config_cfn_lambda_remote_accounts&lt;/code&gt; - optional list of accounts that the S3 bucket for Lambda functions will be shared with.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;config_cfn_kms_admins&lt;/code&gt; - optional list of IAM roles that have administration level access to manage the KMS key.  By default the &lt;strong&gt;admin&lt;/strong&gt; role created by the security resources stack is granted this access.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;config_cfn_kms_encrypters&lt;/code&gt; - optional list of IAM roles that have permission to encrypt ciphertext using the KMS key.  By default the &lt;strong&gt;admin&lt;/strong&gt; role created by the security resources stack is granted this access.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;config_cfn_kms_decrypters&lt;/code&gt; - optional list of IAM roles that have permission to decrypt ciphertext using the KMS key.  By default the &lt;strong&gt;admin&lt;/strong&gt; role created by the security resources stack is granted this access.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

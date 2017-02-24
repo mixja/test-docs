@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tutorials on Cloud Deployment Framework</title>
+    <link>https://example.org/tutorial/index.xml</link>
+    <description>Recent content in Tutorials on Cloud Deployment Framework</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Released under the MIT license</copyright>
+    <lastBuildDate>Sat, 18 Feb 2017 17:15:17 +1300</lastBuildDate>
+    <atom:link href="https://example.org/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Tutorial</title>
+      <link>https://example.org/tutorial/</link>
+      <pubDate>Sat, 18 Feb 2017 17:15:17 +1300</pubDate>
+      
+      <guid>https://example.org/tutorial/</guid>
+      <description>
+
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;This tutorial provides a walkthrough of creating all of your AWS resources from scratch for a given AWS account, using the AWS deployment framework.&lt;/p&gt;
+
+&lt;p&gt;In this tutorial you will be configuring a number of AWS resources:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;No page found with path or logical name &#34;tutorial/security-resources/index.md&#34;.
+&#34;&gt;Security Resources&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;No page found with path or logical name &#34;tutorial/cloudformation-resources/index.md&#34;.
+&#34;&gt;CloudFormation Resources&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;No page found with path or logical name &#34;tutorial/network-resources/index.md&#34;.
+&#34;&gt;Network Resources&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;No page found with path or logical name &#34;tutorial/ecr-resources/index.md&#34;.
+&#34;&gt;EC2 Container Registry (ECR) Resources&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;No page found with path or logical name &#34;tutorial/web-proxy/index.md&#34;.
+&#34;&gt;Web Proxy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;No page found with path or logical name &#34;tutorial/intake-api/index.md&#34;.
+&#34;&gt;Intake API Application&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;No page found with path or logical name &#34;tutorial/intake-accelerator/index.md&#34;.
+&#34;&gt;Intake Accelerator Application&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Each of the above consists of the following:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Ansible playbook&lt;/li&gt;
+&lt;li&gt;CloudFormation template that defines all AWS resources&lt;/li&gt;
+&lt;li&gt;One or more environments, each environment ultimately implemented as a CloudFormation stack&lt;/li&gt;
+&lt;li&gt;Git repository&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h2&gt;
+
+&lt;p&gt;This tutorial assumes you are starting from an empty AWS account and have access to the root account.&lt;/p&gt;
+
+&lt;p&gt;Each of the playbooks described in the &lt;a href=&#34;https://example.org/tutorial/#introduction&#34;&gt;Introduction&lt;/a&gt; are already defined as existing Git repositories, so you will require access to each repository.&lt;/p&gt;
+
+&lt;p&gt;Each playbook also assumes that your local environment is configured with appropriate permissions to create the various AWS resources defined in each playbook.  For example, if your environment specification in a given playbook targets account ID 123456789012, then it is expected that your local AWS environment is configured apporpriate to access that environment.&lt;/p&gt;
+
+&lt;p&gt;For example assuming the following local AWS environment setup:&lt;/p&gt;
+
+&lt;h4 id=&#34;aws-credentials&#34;&gt;~/.aws/credentials:&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;[caintake-users]
+aws_access_key_id = xxxxxxx
+aws_secret_access_key = xxxxxxx
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;aws-config&#34;&gt;~/.aws/config:&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;[profile caintake-sandpit]
+source_profile=caintake-users
+role_arn=arn:aws:iam::123456789012:role/admin
+mfa_serial=arn:aws:iam::391236350805:mfa/JustinMenga
+region=us-west-2
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Assuming the user &lt;code&gt;JustinMenga&lt;/code&gt; in the &lt;code&gt;caintake-users&lt;/code&gt; account has permissions to assume the &lt;code&gt;admin&lt;/code&gt; role in the account &lt;code&gt;123456789012&lt;/code&gt; and all playbooks are targetting the account &lt;code&gt;123456789012&lt;/code&gt;, you would run all playbooks with the following environment configuration:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ export AWS_PROFILE=caintake-sandpit
+$ ansible-playbook site.yml -e env=dev
+...
+...
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;forking-the-starter-repository&#34;&gt;Forking the Starter Repository&lt;/h2&gt;
+
+&lt;p&gt;Although each of the playbooks described in the &lt;a href=&#34;https://example.org/tutorial/#introduction&#34;&gt;Introduction&lt;/a&gt; are already defined as existing Git repositories, it is useful to understand how to create a playbook from scratch that implements the AWS deployment framework and methodology described in this tutorial.&lt;/p&gt;
+
+&lt;p&gt;A starter repository is published at &lt;a href=&#34;https://github.com/casecommons/aws-starter.git&#34;&gt;https://github.com/casecommons/aws-starter.git&lt;/a&gt;, which you can use to fork a new repository, and follow the instructions in the &lt;a href=&#34;https://github.com/casecommons/aws-starter/README.md&#34;&gt;README&lt;/a&gt; to setup your playbook correctly.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
