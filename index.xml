@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cloud Deployment Framework</title>
-    <link>https://example.org/index.xml</link>
+    <link>https://pseudo.co.de/index.xml</link>
     <description>Recent content on Cloud Deployment Framework</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Released under the MIT license</copyright>
     <lastBuildDate>Mon, 20 Feb 2017 06:39:45 +1300</lastBuildDate>
-    <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://pseudo.co.de/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>CloudFormation Resources</title>
-      <link>https://example.org/cloudformation-resources/</link>
+      <link>https://pseudo.co.de/cloudformation-resources/</link>
       <pubDate>Mon, 20 Feb 2017 06:39:45 +1300</pubDate>
       
-      <guid>https://example.org/cloudformation-resources/</guid>
+      <guid>https://pseudo.co.de/cloudformation-resources/</guid>
       <description>
 
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
@@ -43,10 +43,10 @@
     
     <item>
       <title>Creating Security Resources</title>
-      <link>https://example.org/security-resources/</link>
+      <link>https://pseudo.co.de/security-resources/</link>
       <pubDate>Sat, 18 Feb 2017 23:54:48 +1300</pubDate>
       
-      <guid>https://example.org/security-resources/</guid>
+      <guid>https://pseudo.co.de/security-resources/</guid>
       <description>
 
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
@@ -78,27 +78,27 @@
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;In the IAM dashboard, select  &lt;strong&gt;Users&lt;/strong&gt; on the left panel and click &lt;strong&gt;Add User&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://example.org/images/iam-dashboard.png&#34; alt=&#34;IAM Dashboard&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;p&gt;&lt;img src=&#34;https://pseudo.co.de/images/iam-dashboard.png&#34; alt=&#34;IAM Dashboard&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Specify an appropriate user name, select the option to enable &lt;strong&gt;Programmatic access&lt;/strong&gt;, and click &lt;strong&gt;Next: Permissions&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://example.org/images/iam-add-user.png&#34; alt=&#34;Add User&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;p&gt;&lt;img src=&#34;https://pseudo.co.de/images/iam-add-user.png&#34; alt=&#34;Add User&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Select the &lt;strong&gt;Attach existing policies directly&lt;/strong&gt; option and type &lt;strong&gt;AdministratorAccess&lt;/strong&gt; in the &lt;strong&gt;Filter&lt;/strong&gt; input.  Ensure the &lt;strong&gt;AdministratorAccess&lt;/strong&gt; policy is selected and then click &lt;strong&gt;Next: Review&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://example.org/images/iam-set-permissions.png&#34; alt=&#34;Set Permissions&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;p&gt;&lt;img src=&#34;https://pseudo.co.de/images/iam-set-permissions.png&#34; alt=&#34;Set Permissions&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Click on the &lt;strong&gt;Create User&lt;/strong&gt; button.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://example.org/images/iam-create-user.png&#34; alt=&#34;Create User&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;p&gt;&lt;img src=&#34;https://pseudo.co.de/images/iam-create-user.png&#34; alt=&#34;Create User&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Click on the &lt;strong&gt;Show&lt;/strong&gt; link to display the secret access key for the newly created user.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://example.org/images/iam-access-key.png&#34; alt=&#34;Access Key&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;p&gt;&lt;img src=&#34;https://pseudo.co.de/images/iam-access-key.png&#34; alt=&#34;Access Key&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Copy the &lt;strong&gt;Access key ID&lt;/strong&gt; and &lt;strong&gt;Secret access key&lt;/strong&gt; values which you will need to configure the environment.  Once you have copied these values, click on the &lt;strong&gt;Close&lt;/strong&gt; button.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://example.org/images/iam-show-access-key.png&#34; alt=&#34;Show Access Key&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;p&gt;&lt;img src=&#34;https://pseudo.co.de/images/iam-show-access-key.png&#34; alt=&#34;Show Access Key&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Open a new shell prompt and export the access key ID and secret access key values as demonstrated below.&lt;/p&gt;
 
@@ -284,7 +284,7 @@ config_iam_admin_accounts:
 &lt;p&gt;Let&amp;rsquo;s now run the playbook to create these resources.&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;These instructions assume you have configured your local environment with the AWS access key and AWS secret access key created earlier in  &lt;a href=&#34;https://example.org/security-resources/#creating-a-temporary-user&#34;&gt;Creating a temporary user&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;These instructions assume you have configured your local environment with the AWS access key and AWS secret access key created earlier in  &lt;a href=&#34;https://pseudo.co.de/security-resources/#creating-a-temporary-user&#34;&gt;Creating a temporary user&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;First run the Ansible playbook targeting the &lt;code&gt;demo&lt;/code&gt; environment as demonstrated below:&lt;/p&gt;
@@ -373,10 +373,10 @@ demo                       : ok=19   changed=1    unreachable=0    failed=0
 &lt;p&gt;This time the playbook succeeds, pausing on the &lt;code&gt;configure application stack&lt;/code&gt; task for a couple of minutes whilst the CloudFormation stack is created (notice this task completes with a &lt;code&gt;changed&lt;/code&gt; status), and then completing successfully once the stack is created.&lt;/p&gt;
 
 &lt;p&gt;If you navigate to the CloudFormation dashboard, notice that a new stack called &lt;strong&gt;security-resources&lt;/strong&gt; has been created:
-&lt;img src=&#34;https://example.org/images/security-resources-stack.png&#34; alt=&#34;Security Resources Stack&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;https://pseudo.co.de/images/security-resources-stack.png&#34; alt=&#34;Security Resources Stack&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;In the IAM dashboard we can verify that our &lt;strong&gt;admin&lt;/strong&gt; role has been created and if we select the role and open the &lt;strong&gt;Trust Relationships&lt;/strong&gt; tab, we can see that both the local account (account ID &lt;strong&gt;625916301437&lt;/strong&gt;) and remote &lt;strong&gt;&amp;ldquo;users&amp;rdquo;&lt;/strong&gt; account (account ID &lt;strong&gt;391236350805&lt;/strong&gt;) are trusted entities that can assume the &lt;strong&gt;admin&lt;/strong&gt; role:
-&lt;img src=&#34;https://example.org/images/iam-admin-role.png&#34; alt=&#34;IAM Admin Role&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;https://pseudo.co.de/images/iam-admin-role.png&#34; alt=&#34;IAM Admin Role&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Because the &lt;strong&gt;admin&lt;/strong&gt; role has now been created, you should be able to re-run the playbook without the &lt;code&gt;sts_disable&lt;/code&gt; flag:&lt;/p&gt;
 
@@ -421,11 +421,11 @@ demo                       : ok=20   changed=0    unreachable=0    failed=0
 
 &lt;p&gt;Back in the IAM console, you should also be able to see that an &lt;strong&gt;Administrators&lt;/strong&gt; group and &lt;strong&gt;Users&lt;/strong&gt; group have been created:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://example.org/images/iam-groups.png&#34; alt=&#34;IAM Groups&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://pseudo.co.de/images/iam-groups.png&#34; alt=&#34;IAM Groups&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;At this point, you can remove the temporary administrative user &lt;a href=&#34;https://example.org/security-resources/#creating-a-temporary-user&#34;&gt;we created earlier&lt;/a&gt; by selecting the user in the IAM users section, clicking &lt;strong&gt;Delete users&lt;/strong&gt; and confirming the delete operation:
-&lt;img src=&#34;https://example.org/images/iam-delete-user.png&#34; alt=&#34;Delete User&#34; /&gt;
-&lt;img src=&#34;https://example.org/images/iam-confirm-delete-user.png&#34; alt=&#34;Confirm Delete User&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;At this point, you can remove the temporary administrative user &lt;a href=&#34;https://pseudo.co.de/security-resources/#creating-a-temporary-user&#34;&gt;we created earlier&lt;/a&gt; by selecting the user in the IAM users section, clicking &lt;strong&gt;Delete users&lt;/strong&gt; and confirming the delete operation:
+&lt;img src=&#34;https://pseudo.co.de/images/iam-delete-user.png&#34; alt=&#34;Delete User&#34; /&gt;
+&lt;img src=&#34;https://pseudo.co.de/images/iam-confirm-delete-user.png&#34; alt=&#34;Confirm Delete User&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;You should also now clear the previous temporary user credentials from your local shell:&lt;/p&gt;
 
@@ -440,27 +440,27 @@ demo                       : ok=20   changed=0    unreachable=0    failed=0
 
 &lt;p&gt;First login to the &lt;strong&gt;&amp;ldquo;users&amp;rdquo;&lt;/strong&gt; account and navigate to the IAM dashboard.  In this example, we are logging into the &lt;strong&gt;caintakeusers&lt;/strong&gt; account, which is the account we configured as a trusted entity for our new account&amp;rsquo;s IAM &lt;strong&gt;admin&lt;/strong&gt; role:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://example.org/images/login-users.png&#34; alt=&#34;Logging in to the Users Account&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://pseudo.co.de/images/login-users.png&#34; alt=&#34;Logging in to the Users Account&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Navigate to the IAM dashboard Groups section and add a new group called DemoAdmins:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://example.org/images/iam-create-group.png&#34; alt=&#34;Create Group&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://pseudo.co.de/images/iam-create-group.png&#34; alt=&#34;Create Group&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://example.org/images/iam-set-group-name.png&#34; alt=&#34;Set Group Name&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://pseudo.co.de/images/iam-set-group-name.png&#34; alt=&#34;Set Group Name&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;When prompted to attach a policy, click on &lt;strong&gt;Next Step&lt;/strong&gt; to skip this section and then confirm creation of the group:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://example.org/images/iam-skip-group-policy.png&#34; alt=&#34;Skip Group Policy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://pseudo.co.de/images/iam-skip-group-policy.png&#34; alt=&#34;Skip Group Policy&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://example.org/images/iam-create-group-confirm.png&#34; alt=&#34;Confirm Group&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://pseudo.co.de/images/iam-create-group-confirm.png&#34; alt=&#34;Confirm Group&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Select the &lt;strong&gt;Permissions&lt;/strong&gt; tab of the newly created group, expand &lt;strong&gt;Inline Policies&lt;/strong&gt; and create a new inline policy by clicking the &lt;strong&gt;click here&lt;/strong&gt; link:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://example.org/images/iam-group-inline-policy.png&#34; alt=&#34;Confirm Group&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://pseudo.co.de/images/iam-group-inline-policy.png&#34; alt=&#34;Confirm Group&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Choose the &lt;strong&gt;Custom Policy&lt;/strong&gt; option and click &lt;strong&gt;Select&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://example.org/images/iam-group-custom-policy.png&#34; alt=&#34;Confirm Group&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://pseudo.co.de/images/iam-group-custom-policy.png&#34; alt=&#34;Confirm Group&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Copy the following policy document snippet:&lt;/p&gt;
 
@@ -483,17 +483,17 @@ demo                       : ok=20   changed=0    unreachable=0    failed=0
 
 &lt;p&gt;Name the policy &lt;strong&gt;AssumeDemoAdminRole&lt;/strong&gt;, paste the policy document snippet into the &lt;strong&gt;Policy Document&lt;/strong&gt; window and then validate and apply the policy:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://example.org/images/iam-policy-document.png&#34; alt=&#34;Confirm Group&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://pseudo.co.de/images/iam-policy-document.png&#34; alt=&#34;Confirm Group&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://example.org/images/iam-group-policy-attached.png&#34; alt=&#34;Confirm Group&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://pseudo.co.de/images/iam-group-policy-attached.png&#34; alt=&#34;Confirm Group&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Finally we need to attach users go the newly created group:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://example.org/images/iam-add-users-group.png&#34; alt=&#34;Confirm Group&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://pseudo.co.de/images/iam-add-users-group.png&#34; alt=&#34;Confirm Group&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://example.org/images/iam-select-users.png&#34; alt=&#34;Confirm Group&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://pseudo.co.de/images/iam-select-users.png&#34; alt=&#34;Confirm Group&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://example.org/images/iam-users-added.png&#34; alt=&#34;Confirm Group&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://pseudo.co.de/images/iam-users-added.png&#34; alt=&#34;Confirm Group&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The instructions above demonstrate how to manually configure the &lt;strong&gt;&amp;ldquo;users&amp;rdquo;&lt;/strong&gt; account, however ideally you would configure these settings in a security playbook targeting the &lt;strong&gt;users&lt;/strong&gt; account environment, run the playbook and then add users to the group via the AWS console:&lt;/p&gt;
 
@@ -574,10 +574,10 @@ demo                       : ok=20   changed=0    unreachable=0    failed=0
     
     <item>
       <title>Tutorial</title>
-      <link>https://example.org/tutorial/</link>
+      <link>https://pseudo.co.de/tutorial/</link>
       <pubDate>Sat, 18 Feb 2017 17:15:17 +1300</pubDate>
       
-      <guid>https://example.org/tutorial/</guid>
+      <guid>https://pseudo.co.de/tutorial/</guid>
       <description>
 
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
@@ -616,7 +616,7 @@ demo                       : ok=20   changed=0    unreachable=0    failed=0
 
 &lt;p&gt;This tutorial assumes you are starting from an empty AWS account and have access to the root account.&lt;/p&gt;
 
-&lt;p&gt;Each of the playbooks described in the &lt;a href=&#34;https://example.org/tutorial/#introduction&#34;&gt;Introduction&lt;/a&gt; are already defined as existing Git repositories, so you will require access to each repository.&lt;/p&gt;
+&lt;p&gt;Each of the playbooks described in the &lt;a href=&#34;https://pseudo.co.de/tutorial/#introduction&#34;&gt;Introduction&lt;/a&gt; are already defined as existing Git repositories, so you will require access to each repository.&lt;/p&gt;
 
 &lt;p&gt;Each playbook also assumes that your local environment is configured with appropriate permissions to create the various AWS resources defined in each playbook.  For example, if your environment specification in a given playbook targets account ID 123456789012, then it is expected that your local AWS environment is configured apporpriate to access that environment.&lt;/p&gt;
 
@@ -648,7 +648,7 @@ $ ansible-playbook site.yml -e env=dev
 
 &lt;h2 id=&#34;forking-the-starter-repository&#34;&gt;Forking the Starter Repository&lt;/h2&gt;
 
-&lt;p&gt;Although each of the playbooks described in the &lt;a href=&#34;https://example.org/tutorial/#introduction&#34;&gt;Introduction&lt;/a&gt; are already defined as existing Git repositories, it is useful to understand how to create a playbook from scratch that implements the AWS deployment framework and methodology described in this tutorial.&lt;/p&gt;
+&lt;p&gt;Although each of the playbooks described in the &lt;a href=&#34;https://pseudo.co.de/tutorial/#introduction&#34;&gt;Introduction&lt;/a&gt; are already defined as existing Git repositories, it is useful to understand how to create a playbook from scratch that implements the AWS deployment framework and methodology described in this tutorial.&lt;/p&gt;
 
 &lt;p&gt;A starter repository is published at &lt;a href=&#34;https://github.com/casecommons/aws-starter.git&#34;&gt;https://github.com/casecommons/aws-starter.git&lt;/a&gt;, which you can use to fork a new repository, and follow the instructions in the &lt;a href=&#34;https://github.com/casecommons/aws-starter/README.md&#34;&gt;README&lt;/a&gt; to setup your playbook correctly.&lt;/p&gt;
 </description>
@@ -656,10 +656,10 @@ $ ansible-playbook site.yml -e env=dev
     
     <item>
       <title>Cloud Deployment Framework</title>
-      <link>https://example.org/</link>
+      <link>https://pseudo.co.de/</link>
       <pubDate>Tue, 08 Mar 2016 21:07:13 +0100</pubDate>
       
-      <guid>https://example.org/</guid>
+      <guid>https://pseudo.co.de/</guid>
       <description>
 
 &lt;p&gt;The Cloud Deployment Framework (hereafter referred to simply as the &lt;strong&gt;framework&lt;/strong&gt;) is a methodology and collection of tools that helps organizations:&lt;/p&gt;
