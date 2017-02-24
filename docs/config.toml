@@ -1,4 +1,4 @@
-baseurl = "https://example.org/"
+baseurl = "https://pseudo.co.de/"
 languageCode = "en-us"
 title = "Cloud Deployment Framework"
 theme = "hugo-material-docs"
