@@ -15,42 +15,42 @@
     
     <meta name="description" content="Cloud Deployment Framework">
     
-    <link rel="canonical" href="https://pseudo.co.de/tutorial/">
+    <link rel="canonical" href="https://pseudo.co.de/test-docs/tutorial/">
     
     <meta name="author" content="Justin Menga">
     
 
-    <meta property="og:url" content="https://pseudo.co.de/tutorial/">
+    <meta property="og:url" content="https://pseudo.co.de/test-docs/tutorial/">
     <meta property="og:title" content="Cloud Deployment Framework">
-    <meta property="og:image" content="https://pseudo.co.de/images/logo.png">
+    <meta property="og:image" content="https://pseudo.co.de/test-docs/images/logo.png">
     <meta name="apple-mobile-web-app-title" content="Cloud Deployment Framework">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-    <link rel="shortcut icon" type="image/x-icon" href="https://pseudo.co.de/images/favicon.ico">
-    <link rel="icon" type="image/x-icon" href="https://pseudo.co.de/images/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="https://pseudo.co.de/test-docs/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="https://pseudo.co.de/test-docs/images/favicon.ico">
 
     <style>
       @font-face {
         font-family: 'Icon';
-        src: url('https://pseudo.co.de/fonts/icon.eot');
-        src: url('https://pseudo.co.de/fonts/icon.eot')
+        src: url('https://pseudo.co.de/test-docs/fonts/icon.eot');
+        src: url('https://pseudo.co.de/test-docs/fonts/icon.eot')
                format('embedded-opentype'),
-             url('https://pseudo.co.de/fonts/icon.woff')
+             url('https://pseudo.co.de/test-docs/fonts/icon.woff')
                format('woff'),
-             url('https://pseudo.co.de/fonts/icon.ttf')
+             url('https://pseudo.co.de/test-docs/fonts/icon.ttf')
                format('truetype'),
-             url('https://pseudo.co.de/fonts/icon.svg')
+             url('https://pseudo.co.de/test-docs/fonts/icon.svg')
                format('svg');
         font-weight: normal;
         font-style: normal;
       }
     </style>
 
-    <link rel="stylesheet" href="https://pseudo.co.de/stylesheets/application.css">
-    <link rel="stylesheet" href="https://pseudo.co.de/stylesheets/temporary.css">
-    <link rel="stylesheet" href="https://pseudo.co.de/stylesheets/palettes.css">
-    <link rel="stylesheet" href="https://pseudo.co.de/stylesheets/highlight/highlight.css">
+    <link rel="stylesheet" href="https://pseudo.co.de/test-docs/stylesheets/application.css">
+    <link rel="stylesheet" href="https://pseudo.co.de/test-docs/stylesheets/temporary.css">
+    <link rel="stylesheet" href="https://pseudo.co.de/test-docs/stylesheets/palettes.css">
+    <link rel="stylesheet" href="https://pseudo.co.de/test-docs/stylesheets/highlight/highlight.css">
 
     
     
@@ -66,7 +66,7 @@
     </style>
 
     
-    <script src="https://pseudo.co.de/javascripts/modernizr.js"></script>
+    <script src="https://pseudo.co.de/test-docs/javascripts/modernizr.js"></script>
 
     
 
@@ -131,11 +131,11 @@
 <main class="main">
 	<div class="drawer">
 		<nav aria-label="Navigation">
-  <a href="https://pseudo.co.de/" class="project">
+  <a href="https://pseudo.co.de/test-docs/" class="project">
     <div class="banner">
       
         <div class="logo">
-          <img src="https://pseudo.co.de/images/logo.png">
+          <img src="https://pseudo.co.de/test-docs/images/logo.png">
         </div>
       
       <div class="name">
@@ -163,7 +163,7 @@
 
 
 
-<a  title="Introduction" href="https://pseudo.co.de/">
+<a  title="Introduction" href="https://pseudo.co.de/test-docs/">
 	
 	Introduction
 </a>
@@ -181,7 +181,7 @@
 
 
 
-<a class="current" title="Tutorial" href="https://pseudo.co.de/tutorial/">
+<a class="current" title="Tutorial" href="https://pseudo.co.de/test-docs/tutorial/">
 	
 	Tutorial
 </a>
@@ -202,7 +202,7 @@
 
 
 
-<a  title="Security Resources" href="https://pseudo.co.de/security-resources/">
+<a  title="Security Resources" href="https://pseudo.co.de/test-docs/security-resources/">
 	
 	Security Resources
 </a>
@@ -220,7 +220,7 @@
 
 
 
-<a  title="CloudFormation Resources" href="https://pseudo.co.de/cloudformation-resources/">
+<a  title="CloudFormation Resources" href="https://pseudo.co.de/test-docs/cloudformation-resources/">
 	
 	CloudFormation Resources
 </a>
@@ -238,7 +238,7 @@
 
 
 
-<a  title="License" href="https://pseudo.co.de/license/">
+<a  title="License" href="https://pseudo.co.de/test-docs/license/">
 	
 	License
 </a>
@@ -331,7 +331,7 @@
 
 <p>This tutorial assumes you are starting from an empty AWS account and have access to the root account.</p>
 
-<p>Each of the playbooks described in the <a href="https://pseudo.co.de/tutorial/#introduction">Introduction</a> are already defined as existing Git repositories, so you will require access to each repository.</p>
+<p>Each of the playbooks described in the <a href="https://pseudo.co.de/test-docs/tutorial/#introduction">Introduction</a> are already defined as existing Git repositories, so you will require access to each repository.</p>
 
 <p>Each playbook also assumes that your local environment is configured with appropriate permissions to create the various AWS resources defined in each playbook.  For example, if your environment specification in a given playbook targets account ID 123456789012, then it is expected that your local AWS environment is configured apporpriate to access that environment.</p>
 
@@ -363,7 +363,7 @@ $ ansible-playbook site.yml -e env=dev
 
 <h2 id="forking-the-starter-repository">Forking the Starter Repository</h2>
 
-<p>Although each of the playbooks described in the <a href="https://pseudo.co.de/tutorial/#introduction">Introduction</a> are already defined as existing Git repositories, it is useful to understand how to create a playbook from scratch that implements the AWS deployment framework and methodology described in this tutorial.</p>
+<p>Although each of the playbooks described in the <a href="https://pseudo.co.de/test-docs/tutorial/#introduction">Introduction</a> are already defined as existing Git repositories, it is useful to understand how to create a playbook from scratch that implements the AWS deployment framework and methodology described in this tutorial.</p>
 
 <p>A starter repository is published at <a href="https://github.com/casecommons/aws-starter.git">https://github.com/casecommons/aws-starter.git</a>, which you can use to fork a new repository, and follow the instructions in the <a href="https://github.com/casecommons/aws-starter/README.md">README</a> to setup your playbook correctly.</p>
 
@@ -384,7 +384,7 @@ $ ansible-playbook site.yml -e env=dev
 <nav class="pagination" aria-label="Footer">
   <div class="previous">
   
-      <a href="https://pseudo.co.de/security-resources/" title="Creating Security Resources">
+      <a href="https://pseudo.co.de/test-docs/security-resources/" title="Creating Security Resources">
         <span class="direction">
           Previous
         </span>
@@ -404,7 +404,7 @@ $ ansible-playbook site.yml -e env=dev
 
   <div class="next">
   
-      <a href="https://pseudo.co.de/" title="Cloud Deployment Framework">
+      <a href="https://pseudo.co.de/test-docs/" title="Cloud Deployment Framework">
         <span class="direction">
           Next
         </span>
@@ -448,7 +448,7 @@ $ ansible-playbook site.yml -e env=dev
     
     </script>
 
-    <script src="https://pseudo.co.de/javascripts/application.js"></script>
+    <script src="https://pseudo.co.de/test-docs/javascripts/application.js"></script>
     
 
     <script>

@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tutorials on Cloud Deployment Framework</title>
-    <link>https://pseudo.co.de/tutorial/index.xml</link>
+    <link>https://pseudo.co.de/test-docs/tutorial/index.xml</link>
     <description>Recent content in Tutorials on Cloud Deployment Framework</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Released under the MIT license</copyright>
     <lastBuildDate>Sat, 18 Feb 2017 17:15:17 +1300</lastBuildDate>
-    <atom:link href="https://pseudo.co.de/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://pseudo.co.de/test-docs/tutorial/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Tutorial</title>
-      <link>https://pseudo.co.de/tutorial/</link>
+      <link>https://pseudo.co.de/test-docs/tutorial/</link>
       <pubDate>Sat, 18 Feb 2017 17:15:17 +1300</pubDate>
       
-      <guid>https://pseudo.co.de/tutorial/</guid>
+      <guid>https://pseudo.co.de/test-docs/tutorial/</guid>
       <description>
 
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
@@ -54,7 +54,7 @@
 
 &lt;p&gt;This tutorial assumes you are starting from an empty AWS account and have access to the root account.&lt;/p&gt;
 
-&lt;p&gt;Each of the playbooks described in the &lt;a href=&#34;https://pseudo.co.de/tutorial/#introduction&#34;&gt;Introduction&lt;/a&gt; are already defined as existing Git repositories, so you will require access to each repository.&lt;/p&gt;
+&lt;p&gt;Each of the playbooks described in the &lt;a href=&#34;https://pseudo.co.de/test-docs/tutorial/#introduction&#34;&gt;Introduction&lt;/a&gt; are already defined as existing Git repositories, so you will require access to each repository.&lt;/p&gt;
 
 &lt;p&gt;Each playbook also assumes that your local environment is configured with appropriate permissions to create the various AWS resources defined in each playbook.  For example, if your environment specification in a given playbook targets account ID 123456789012, then it is expected that your local AWS environment is configured apporpriate to access that environment.&lt;/p&gt;
 
@@ -86,7 +86,7 @@ $ ansible-playbook site.yml -e env=dev
 
 &lt;h2 id=&#34;forking-the-starter-repository&#34;&gt;Forking the Starter Repository&lt;/h2&gt;
 
-&lt;p&gt;Although each of the playbooks described in the &lt;a href=&#34;https://pseudo.co.de/tutorial/#introduction&#34;&gt;Introduction&lt;/a&gt; are already defined as existing Git repositories, it is useful to understand how to create a playbook from scratch that implements the AWS deployment framework and methodology described in this tutorial.&lt;/p&gt;
+&lt;p&gt;Although each of the playbooks described in the &lt;a href=&#34;https://pseudo.co.de/test-docs/tutorial/#introduction&#34;&gt;Introduction&lt;/a&gt; are already defined as existing Git repositories, it is useful to understand how to create a playbook from scratch that implements the AWS deployment framework and methodology described in this tutorial.&lt;/p&gt;
 
 &lt;p&gt;A starter repository is published at &lt;a href=&#34;https://github.com/casecommons/aws-starter.git&#34;&gt;https://github.com/casecommons/aws-starter.git&lt;/a&gt;, which you can use to fork a new repository, and follow the instructions in the &lt;a href=&#34;https://github.com/casecommons/aws-starter/README.md&#34;&gt;README&lt;/a&gt; to setup your playbook correctly.&lt;/p&gt;
 </description>
